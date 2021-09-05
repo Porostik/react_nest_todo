@@ -1,0 +1,11 @@
+name: "Auto add review"
+
+on: pull_request
+
+jobs:
+  add-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kentaro-m/auto-assign-action@v1.2.0
+        with:
+          configuration-path: .github/add-reviews.config.yml

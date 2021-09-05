@@ -1,0 +1,10 @@
+.layout {
+  width: 700px;
+  margin: 100px auto 0 auto;
+
+  &__body {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}

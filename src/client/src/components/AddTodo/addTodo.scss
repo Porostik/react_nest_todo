@@ -1,0 +1,12 @@
+.add-todo {
+  display: flex;
+  width: 100%;
+
+  .input {
+    width: 100%;
+  }
+
+  &__submit {
+    margin-left: 10px;
+  }
+}

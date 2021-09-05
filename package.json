@@ -1,0 +1,28 @@
+{
+  "name": "react-nest-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deps:client": "cd src/client && npm ci",
+    "deps:server": "cd src/server && npm ci",
+    "deps:all": "npm ci && npm run deps:client && npm run deps:server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:client": "cd src/client && npm start",
+    "format": "prettier --write \"src/**/src/**/*.ts\" \"src/**/src/**/*.tsx\"",
+    "lint": "eslint --debug \"src/**/src/**/*.ts\" \"src/**/src/**/*.tsx\"",
+    "lint:fix": "eslint \"src/**/src/**/*.ts\" \"src/**/src/**/*.tsx\" --fix ",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.25.1",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
+  }
+}

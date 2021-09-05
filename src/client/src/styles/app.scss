@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: map-get($light, "500");
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

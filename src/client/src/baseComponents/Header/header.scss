@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+
+.header {
+  padding: 15px 0;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-links {
+      display: flex;
+
+      a {
+        background-color: #fff;
+        padding: 7px 15px;
+        font-size: 18px;
+        border-radius: 5px;
+        color: #000;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+
+        transition: all 0.3s linear;
+
+        & + a {
+          margin-left: 15px;
+        }
+
+        &:hover {
+          border-bottom-color: map-get($primary, "500");
+        }
+      }
+    }
+
+    &-account {
+      &-link {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+}

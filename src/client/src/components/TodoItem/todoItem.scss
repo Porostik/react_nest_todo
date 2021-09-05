@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  &__inner {
+    width: 100%;
+    background-color: map-get($primary, "300");
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  &__name {
+    color: #fff;
+  }
+
+  &__delete {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid $error;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}

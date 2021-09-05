@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.btn {
+  padding: 7px 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+
+  transition: background-color 0.3s linear;
+
+  &:hover {
+    background-color: map-get($light, "100");
+  }
+
+  &--error {
+    background-color: $error;
+    color: #fff;
+
+    &:hover {
+      background-color: $error;
+      transform: scale(1.05);
+    }
+  }
+
+  &--primary {
+    background-color: map-get($primary, "300");
+    color: #fff;
+
+    &:hover {
+      background-color: map-get($primary, "300");
+      transform: scale(1.05);
+    }
+  }
+}

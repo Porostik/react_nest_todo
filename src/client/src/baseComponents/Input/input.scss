@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.input {
+  &__control {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: map-get($primary, "200");
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+
+    &:focus,
+    &:hover {
+      background-color: map-get($primary, "100");
+    }
+
+    &::placeholder {
+      color: map-get($light, "500");
+    }
+  }
+
+  & + .input {
+    margin-top: 20px;
+  }
+
+  &__error {
+    color: $error;
+  }
+}
